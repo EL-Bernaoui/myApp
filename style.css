@@ -1,0 +1,151 @@
+/* Import Open Sans Font */
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"); */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Open-sans", sans-serif;
+}
+
+.container {
+  margin: 100px auto auto;
+  padding-inline: 15px;
+}
+.main {
+  width: min(100%, 550px);
+  margin-inline: auto;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+}
+.main h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 40px;
+}
+.main h2 span:first-child {
+  color: #009688;
+}
+.main h2 span:last-child {
+  color: #f44336;
+}
+.main form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+.main form .inputs {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.main form input {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+.main form input::placeholder {
+  color: #999;
+  font-size: 14px;
+}
+.main form input[type="number"] {
+  width: calc(50% - 8px);
+}
+.main form input[type="number"]::-webkit-outer-spin-button,
+.main form input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.main form input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+.main form .calculate {
+  width: fit-content;
+  margin-inline: auto;
+  padding: 12px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(3, 168, 244, 0.7);
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.main form .calculate:hover {
+  background-color: #03a9f4;
+}
+.main .results li {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 20px;
+}
+li::marker {
+  font-size: 18px;
+  font-weight: 600;
+}
+.main .results li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.main .results li h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #222222;
+  font-weight: 600;
+}
+.main .results li .more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+.main .results li p {
+  font-weight: 600;
+  color: #777;
+}
+.main .results li p span {
+  font-weight: bold;
+}
+.main .results li p:nth-child(1) span {
+  color: #009688;
+}
+.main .results li p:nth-child(2) span {
+  color: #f44336;
+}
+.main .results li .delete {
+  border: none;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: #fff;
+  font-weight: bold;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.main .results li .delete:hover {
+  background-color: red;
+}
+
+@media (max-width: 365px) {
+  .container {
+    margin: 0;
+    padding-inline: 0;
+  }
+  .main h2 {
+    font-size: 25px;
+  }
+  .main .results li .more {
+    padding-left: 0;
+  }
+}

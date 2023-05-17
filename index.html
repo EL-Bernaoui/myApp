@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <h2>Calculate <span>Profit</span> After Removing <span>Fees</span></h2>
+        <form>
+          <div class="inputs">
+            <input
+              type="number"
+              name="profit"
+              id="profit"
+              placeholder="Enter Your Profit"
+            />
+            <input
+              type="number"
+              name="fees"
+              id="fees"
+              placeholder="Enter Fees on Percentage"
+            />
+          </div>
+          <input
+            type="text"
+            name="description"
+            id="description"
+            placeholder="Enter Description for this calculation"
+          />
+          <button class="calculate">Calculate</button>
+        </form>
+        <ol class="results"></ol>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
